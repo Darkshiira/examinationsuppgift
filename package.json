@@ -1,0 +1,45 @@
+{
+  "name": "f_stack-js",
+  "version": "1.0.0",
+  "description": "𝄢_stack-dot-js is an educational project framework meant to provide a full technical for learning purposes.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node app.js && node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "init": "node init.js",
+    "server": "node server.js",
+
+
+    "publish": "node src/node/f_data/publish.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rymdpeter/f_stack-js.git"
+  },
+  "author": "Peter Karlsson",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/rymdpeter/f_stack-js/issues"
+  },
+  "homepage": "https://github.com/rymdpeter/f_stack-js#readme",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "express": "^4.18.1",
+    "highlight.js": "^11.6.0",
+    "marked": "^4.1.1",
+    "open": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^4.0.7",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.24.0",
+    "sha256": "^0.2.0",
+    "typescript": "^4.8.4",
+    "uuid": "^9.0.0",
+    "zodiac-signs": "^1.1.0"
+  },
+  "keywords": [
+    "template"
+  ]
+}

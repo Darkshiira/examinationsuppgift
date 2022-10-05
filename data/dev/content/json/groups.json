@@ -1,0 +1,15 @@
+[
+    {
+        "name": "admin",
+        "description": "In charge of function."
+    },
+    {
+        "name": "students",
+        "description": ""
+    },
+    {
+        "name": "bots",
+        "description": "All automata."
+    }
+]
+
