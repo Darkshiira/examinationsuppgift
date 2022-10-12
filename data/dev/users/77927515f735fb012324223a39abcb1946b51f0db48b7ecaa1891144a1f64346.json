@@ -1,0 +1,21 @@
+{
+  "firstname": "Alex",
+  "lastname": "Saxena",
+  "discord": "HisLordship#3680",
+  "github": "AlexSaxena",
+  "personalityType": "gul",
+  "birthYear": "1994",
+  "zodiac": {
+    "name": "Sagittarius",
+    "element": "fire",
+    "stone": "topaz",
+    "symbol": "♐",
+    "dateMin": "2000-11-23",
+    "dateMax": "2000-12-21"
+  },
+  "belongsTo": "Grupp 3",
+  "skills": "Kassahantering Kundhantering Schemaläggning Administration",
+  "positiveExperience": "Ja",
+  "explanation": "Jag får lära mig mer om Javascript!",
+  "hash": "b31c23c45c59a88123f52ec2974454e38d49652a22a8b35040ed15c34dac5f4a"
+}

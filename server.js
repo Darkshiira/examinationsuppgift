@@ -8,6 +8,11 @@ const path = require("path")
 const {F_DATA} = require('./src/node/f_data/f_data.js')
 app = express()
 const port = process.env.DEV_SERVER_PORT || 3000
+const bodyParser = require('body-parser');
+const cors = require('cors');
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "www/dev")))
 
@@ -20,6 +25,18 @@ app.get('/api', (req, res) => {
       "/api/content/render/:filename": "returns markup from .md files, parsed with markedjs."
     }
   })
+})
+let newUsers = [];
+app.get('/hanna', (req, res) => {
+  res.json(newUsers);
+})
+
+app.post('/hanna', (req, res) => {
+  const newUser = req.body;
+
+  // Output the book to the console for debugging
+  console.log(newUser);
+  newUsers.push(newUser);
 })
 
 app.get('/api/users', (req, res) => {

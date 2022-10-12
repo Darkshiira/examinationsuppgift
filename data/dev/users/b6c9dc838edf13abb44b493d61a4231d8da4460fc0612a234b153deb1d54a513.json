@@ -1,0 +1,15 @@
+{"firstname":"Gustav",
+"lastname":"Franchell",
+"discord":"Gustav Franchell#8892",
+"github":"gufr2201",
+"personalityType":"grön",
+"birthYear":"1993",
+"zodiac":{
+    "name":"Scorpio","element":"water","stone":"beryl",
+    "symbol":"♏","dateMin":"2000-10-24","dateMax":"2000-11-22"
+},
+"belongsTo":"Grupp 5",
+"skills":"Fakturering kandidatutbildning inom samhällsplanering konsulterinng",
+"positiveExperience":"JA",
+"explanation":"Det är kul med kod och spännande att lära sig",
+"hash":"dca105114f2c98eeaf20301e8501264c7ae50207aa8c70ed15849e5de6b341f2"}

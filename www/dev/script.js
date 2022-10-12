@@ -1,3 +1,4 @@
+
 function getContentFromApi(filename, selector) {
     fetch('http://localhost:3000/api/content/' + filename)
     .then(response => response = response.json())
@@ -13,9 +14,15 @@ function getUsers() {
     fetch('http://localhost:3000/api/users/')
         .then((response) => response = response.json())
         .then(users => {
-            console.log(users)
-        })
-}
-getUsers()
 
-
+            users.forEach(user => {
+                for (let key in user) {
+                    let element = document.querySelector('[data-source="' + key + '"]')
+                    if(element) {
+                        element.innerText = user[key]
+                    }
+                }
+            });
+        });
+    }
+getUsers();

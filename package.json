@@ -9,8 +9,6 @@
     "build": "webpack",
     "init": "node init.js",
     "server": "node server.js",
-
-
     "publish": "node src/node/f_data/publish.js"
   },
   "repository": {
@@ -24,7 +22,9 @@
   },
   "homepage": "https://github.com/rymdpeter/f_stack-js#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "cli-color": "^2.0.3",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "highlight.js": "^11.6.0",
     "marked": "^4.1.1",

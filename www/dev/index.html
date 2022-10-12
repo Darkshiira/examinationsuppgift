@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sidans titel (development)</title>
+        <title>Examinationsuppgift</title>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     <body>
+
         <nav>
-            <ul>
-                <li><a href="/">Start</a></li>
-            </ul>
+            <a href="hanna.html">Hannas sida</a>
         </nav>
         <main>
             <h1 id="DocumentTitle">Frontend 1: Examinationsuppgift</h1>
             <section id="MainDescription">
-                <p>
-                    Välkommen till kursen "Frontent 1: Javascript" hos Nackademin. Hoppas alla har kul.
-                    </p>
-                <p>
-                    Det här projektet är tänkt att ge alla studenter ett ramverk för att dela, testa, granska och lämna in kod. Glöm inte att ha kul ':p
-                    </p>
+                <h2>Problemställning</h2>
+                <strong>Hur kan man på ett visuellt sätt dela upp personer efter data som finns tillgänglig?</p></strong>
+                <p>Jag har i min examinerande uppgift valt att bygga en hemsida där användaren kan anmäla sig(till REST APIn) till att söka efter en grupp i vår klass.</p>
+                <p>Därefter kan de söka reda på vilken grupp de hamnar i efter personlighetsfärg.</p>
+                <p>Sist kan användaren ta reda på mer information om de i klassen, eller söka efter en klasskamrat som har ett specifikt intresse.</p>
+                <br>
+                <p>Att kunna hämta ut olika parametrar ur data är viktigt att kunna som webbutvecklare, då flera företag använder sig av just data med olika parametrar, som ska kunna sorteras ut, användas vidare samt visualiseras på ett tydligt sätt.</p>
+                <p>T.ex. i olika webbforum, användarsidor eller varför inte dating-sidor?</p>
+            </section>
+
+            <section>
+                <strong>Hur kan man söka i JSON-filer på en REST API-server för att plocka ut vissa specifika objekt? </p></strong>
+                <p>Jag har här valt att använda mig av fetch för att hämta ned datan och sedan loopat igenom den för att hitta de objekt jag söker efter.</p>
+                <p>Detta eftersom data oftast inte ligger lokalt på datorn, och därför behöver hämtas hem på detta sätt.</p>
+                <p>Loopen är sedan för att gå igenom samtliga data för att hitta specifika nyckelord.</p>
+            </section>
+
+            <section>
+                <strong>Hur kan man lägga upp data själv på en REST API-server?</strong>
+                <p>Här har jag valt att återigen använda mig av fetch, genom att post:a den sträng jag skapar och konverterar den till JSON-filer genom stringify.</p>
+                <p>Detta eftersom det sällan är användbart att endast kunna använda sig av befintlig data, utan ny data måste kunna tillföras.</p>
             </section>
             
             <section data-source="content">
             </section>
 
             <section>
-            </section>
-            
+             <h2>Credits:</h2>
             <p id="ProjectCredits">
-                Den här sidan är byggd med f_stack-js.<br/>
-            </p>
+        <em>Jag har använt mig av Javascript, HTML och CSS.</em>
+        <p>Servern är skriven av Peter, min lärare.</p>   
+            </section>
         </main>
         <script src="script.js"></script>
     </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitta din grupp</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id ="top">
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <a href="#top"><li>Start</li></a>
+                  <a href="#admission"><li>Ansökan</li></a>
+                  <a href="#personalityTypeBox"><li>Hitta din grupp</li></a>
+                  <a href="#searchFieldSkills"><li>Sök medlem</li></a>
+                </ul>
+                
+              </div><h1 id="navTitle">Hitta din grupp!</h1></nav>
+    </div>
+    <div id="admission">
+        <form id="questionForm"><h1 id="admissionTitle">Ansök till att vara med i en grupp idag!</h1>
+            <label>Namn:</label><input type="text" id="firstnameForm">
+            <label>Efternamn:</label><input type="text" id="lastnameForm">
+            <label>Personlighetstyp:</label><input type="text" id="personalityTypeForm">
+            <label>Färdigheter, hobbies: (skriv 3 stycken utan kommatecken)</label>
+            <input type="text" id="skillsForm"><input id="submitButtonForm" type="submit"Value="OK"></form>
+            <div id="submitBox"><h1 id="submitBoxLine">Sign up!</h1><img src="./images/401221.png " id="butterfly" alt=""></div>
+    </div>
+ 
+    
+<div id="personalityTypeBox">
+    <form id="form"> <h1 id="personalityTitle">Sök efter din grupp efter personlighetstyp!</h1>
+    <label>Välj: Grön, Röd, Blå eller Gul</label><input type="text" id="search">
+    <input type="submit" value ="OK"></form>
+    <div id="resultsPersonality"></div>
+</div>
+
+    <div id="searchField">
+        <h1 id="searchFieldTitle">Hittat någon intressant?</h1>
+<h2 id="searchFieldUnderTitle">Lär känna dem mer!</h2>
+        <form id="findUserForm"><label>Sök efter medlem:</label><input type="text" id = "searchUsers"><input type="submit" value="search"></form>  
+    </div>
+
+    <div id="result"><table><thead></thead><tr></tr></table></div>
+
+    <div id="searchFieldSkills">
+        <h1 id="searchFieldSkillsTitle">Eller vill du hitta någon med samma intressen eller förmågor som dig?</h1>
+        <form id ="skillsForm" onsubmit ="submitForm(event)"><label>Sök på ett av dina intressen eller en av dina förmågor:</label><input type="text" id="skillSearch"><input type="submit" value="Search"></form>
+    </div>
+    
+    <script src="./JS/hanna.js"></script>
+    <footer><h4 id="footerTitle">Denna sida är gjord av: <em>Hanna ArefiArdakani</em></h4></footer>
+</body>
+</html>
