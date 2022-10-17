@@ -29,11 +29,11 @@
     </div>
     <div id="admission">
         <form id="questionForm"><h1 id="admissionTitle">Ansök till att vara med i en grupp idag!</h1>
-            <label>Namn:</label><input type="text" id="firstnameForm">
-            <label>Efternamn:</label><input type="text" id="lastnameForm">
-            <label>Personlighetstyp:</label><input type="text" id="personalityTypeForm">
+            <label>Namn:</label><input type="text" id="firstnameForm" required>
+            <label>Efternamn:</label><input type="text" id="lastnameForm" required>
+            <label>Personlighetstyp:</label><input type="text" id="personalityTypeForm" required>
             <label>Färdigheter, hobbies: (skriv 3 stycken utan kommatecken)</label>
-            <input type="text" id="skillsForm">
+            <input type="text" id="skillsForm" required>
             <input id="submitButtonForm" type="submit"Value="OK"></form>
             <div id="submitBox"><h1 id="submitBoxLine">Sign up!</h1><img src="./images/401221.png " id="butterfly" alt=""></div>
     </div>
@@ -42,7 +42,7 @@
 <div id="personalityTypeBox">
     <form id="form"> <h1 id="personalityTitle">Sök efter din grupp efter personlighetstyp!</h1>
     <label>Välj: Grön, Röd, Blå eller Gul</label>
-    <input type="text" id="search">
+    <input type="text" id="search" required>
     <input type="submit" value ="OK"></form>
     <div id="resultsPersonality"></div>
 </div>
@@ -51,7 +51,7 @@
         <h1 id="searchFieldTitle">Hittat någon intressant?</h1>
 <h2 id="searchFieldUnderTitle">Lär känna dem mer!</h2>
         <form id="findUserForm"><label>Sök efter medlem:</label>
-            <input type="text" id = "searchUsers">
+            <input type="text" id = "searchUsers" required>
             <input type="submit" value="search"></form>  
     </div>
 
@@ -61,7 +61,7 @@
         <h1 id="searchFieldSkillsTitle">Eller vill du hitta någon med samma intressen eller förmågor som dig?</h1>
         <form id ="skillsForm" onsubmit ="submitForm(event)">
             <label>Sök på ett av dina intressen eller en av dina förmågor:</label>
-            <input type="text" id="skillSearch">
+            <input type="text" id="skillSearch" required>
             <input type="submit" value="Search"></form>
     </div>
     

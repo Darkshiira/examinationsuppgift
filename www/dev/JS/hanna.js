@@ -222,35 +222,26 @@ function fetchingOwnUser() {
 function submitForm(e) {
     e.preventDefault();
     result.innerHTML = "";
-        if (document.getElementById("skillSearch").value === "") {
-            alert("Please fill out the form");
-        } else {
         let skillSearch = document.getElementById("skillSearch").value;
         findASkill(skillSearch);
         findOwnSkill(skillSearch);
-    }}
+    }
 
 //This will call the function to add a person when the form to add your own information is submitted.
  formQuestion.addEventListener("submit", (e) => {
-    if (firstNameForm.value === "") {
-        alert("Please fill out the form");
-    } else {
      e.preventDefault();
      document.getElementById("submitBoxLine").textContent= `Välkommen ${firstNameForm.value}!`;
      addAPerson();
     formQuestion.reset();
-}});
+});
 
 //This till call the functions to search for which users have a certain personalitytrait from both endpoints in the api.
  form.addEventListener("submit", (e) => {
-    if (document.getElementById("search").value === "") {
-        alert("Please fill out the form");
-    } else {
     document.getElementById("resultsPersonality").innerHTML = "";
     let search = document.getElementById("search").value;
     fetchingPersonality(search);
     fetchingOwnUserPersonalityType(search);
-}
+
     e.preventDefault();
     form.reset(); 
 });
