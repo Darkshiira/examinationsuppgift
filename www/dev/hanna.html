@@ -33,14 +33,16 @@
             <label>Efternamn:</label><input type="text" id="lastnameForm">
             <label>Personlighetstyp:</label><input type="text" id="personalityTypeForm">
             <label>Färdigheter, hobbies: (skriv 3 stycken utan kommatecken)</label>
-            <input type="text" id="skillsForm"><input id="submitButtonForm" type="submit"Value="OK"></form>
+            <input type="text" id="skillsForm">
+            <input id="submitButtonForm" type="submit"Value="OK"></form>
             <div id="submitBox"><h1 id="submitBoxLine">Sign up!</h1><img src="./images/401221.png " id="butterfly" alt=""></div>
     </div>
  
     
 <div id="personalityTypeBox">
     <form id="form"> <h1 id="personalityTitle">Sök efter din grupp efter personlighetstyp!</h1>
-    <label>Välj: Grön, Röd, Blå eller Gul</label><input type="text" id="search">
+    <label>Välj: Grön, Röd, Blå eller Gul</label>
+    <input type="text" id="search">
     <input type="submit" value ="OK"></form>
     <div id="resultsPersonality"></div>
 </div>
@@ -48,14 +50,19 @@
     <div id="searchField">
         <h1 id="searchFieldTitle">Hittat någon intressant?</h1>
 <h2 id="searchFieldUnderTitle">Lär känna dem mer!</h2>
-        <form id="findUserForm"><label>Sök efter medlem:</label><input type="text" id = "searchUsers"><input type="submit" value="search"></form>  
+        <form id="findUserForm"><label>Sök efter medlem:</label>
+            <input type="text" id = "searchUsers">
+            <input type="submit" value="search"></form>  
     </div>
 
     <div id="result"><table><thead></thead><tr></tr></table></div>
 
     <div id="searchFieldSkills">
         <h1 id="searchFieldSkillsTitle">Eller vill du hitta någon med samma intressen eller förmågor som dig?</h1>
-        <form id ="skillsForm" onsubmit ="submitForm(event)"><label>Sök på ett av dina intressen eller en av dina förmågor:</label><input type="text" id="skillSearch"><input type="submit" value="Search"></form>
+        <form id ="skillsForm" onsubmit ="submitForm(event)">
+            <label>Sök på ett av dina intressen eller en av dina förmågor:</label>
+            <input type="text" id="skillSearch">
+            <input type="submit" value="Search"></form>
     </div>
     
     <script src="./JS/hanna.js"></script>

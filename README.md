@@ -12,7 +12,7 @@ Jag har valt att lösa detta problem för att på ett visuellt sett kunna sorter
  Mitt program, med dess funktioner, kan därför användas till att plocka ut information från JSON-filer och enkelt lägga ut dem på en hemsida genom att endast arbeta i DOM-en. 
 
 ## Användning av programmet:
-Ladda ned repot till VS Code. Öppna servern med npm start, och klicka därefter in på länken Hannas sida. Där kan du skriva in din information i ett forms, för att lägga till dina uppgifter till servern.
+Ladda ned repot till VS Code. Kör npm install och sedan öppna servern med npm start, och klicka därefter in på länken Hannas sida. Där kan du skriva in din information i ett forms, för att lägga till dina uppgifter till servern.
 Längre ned kan du söka efter personlighetsfärg, samt söka efter deltagare utifrån första namn eller färdigheter/hobbies.
 
 ### Användning av Javascript-koden:
